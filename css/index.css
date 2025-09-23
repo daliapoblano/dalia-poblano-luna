@@ -4,6 +4,7 @@ body{
     font-family:"Nunito", sans-serif;
 }
 
+
 header{
     position:sticky;
     top:0;
@@ -57,6 +58,7 @@ p{
     margin-right: 18px;     
     font-size: 30px;      
     color: #F1F5F9;           
+
 }
 
 #Experience{
