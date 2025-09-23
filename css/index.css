@@ -4,17 +4,19 @@ body{
     font-family:"Nunito", sans-serif;
 }
 
-h2{
-    padding: 22px;
-    margin: 2px, 10px;
-    font-size:30px;
-    font-weight: 200;
-    color:#6366F1;
+
+header{
+    position:sticky;
+    top:0;
+    padding:15px;
+    background-color:#F1F5F9;
 }
 
-#ul_text{
-    color:#94A3B8;
-    list-style-type: square;
+header nav ul{
+    display:flex;
+    justify-content: center;
+    gap: 100px;
+    list-style-type: none;
 }
 
 a{
@@ -44,6 +46,8 @@ p{
 
 #Connect ul{
     list-style: none;
+    display: flex;
+    justify-content: space-around;
 }
 
 #Connect li{
@@ -54,26 +58,27 @@ p{
     margin-right: 18px;     
     font-size: 30px;      
     color: #F1F5F9;           
-  }
 
-
-#About{
-    padding: 10px;
-    margin: 15px;
-  }
+}
 
 #Experience{
-    padding: 10px;
-    margin:15px;
-    background-color: #F5E7FE;
-  }
+    background-color: #fdfdf6;
+    color:#0F172A;
+    padding: 80px;
+    border: 10px solid #6495ed;
+}
 
-#Connect{
-    padding:10px;
-    margin:15px;
-  }
+.experience-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+}
 
-section{
-    padding: 10px;
-    margin:14px;
-  }
+.experience{
+    border-bottom: 3px solid #ccc;
+}
+
+#About{
+    padding:80px;
+}
+
