@@ -8,14 +8,14 @@ body{
 header{
     position:sticky;
     top:0;
-    padding:15px;
+    padding:0.938rem;
     background-color:#F1F5F9;
 }
 
 header nav ul{
     display:flex;
     justify-content: center;
-    gap: 100px;
+    gap: 6.25rem;
     list-style-type: none;
 }
 
@@ -25,23 +25,23 @@ a{
 
 h1{
     text-align:center;
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 #profile_pic{
-    max-width: 250px;   
+    max-width: 15.625rem;   
     height: auto;       
-    border-radius: 10px; 
-    margin-right:150px;
-    margin-left:850px;
-    margin-top:-80px;
+    border-radius: 0.625rem; 
+    margin-right: 9.375rem;
+    margin-left: 53.125rem;
+    margin-top: -5rem;
 }
 
 p{
     color:#94A3B8;
     text-align: left;
-    margin-right: 850px;
-    margin-left:50px;
+    margin-right: 53.125rem;
+    margin-left: 3.125rem;
 }
 
 #Connect ul{
@@ -51,12 +51,12 @@ p{
 }
 
 #Connect li{
-    margin-bottom: 15px;
+    margin-bottom: 0.938rem;
 }
 
 #Connect i{
-    margin-right: 18px;     
-    font-size: 30px;      
+    margin-right: 1.125rem;     
+    font-size: 1.875rem;      
     color: #F1F5F9;           
 
 }
@@ -64,8 +64,8 @@ p{
 #Experience{
     background-color: #fdfdf6;
     color:#0F172A;
-    padding: 80px;
-    border: 10px solid #6495ed;
+    padding: 5rem;
+    border: 0.625rem solid #6495ed;
 }
 
 .experience-header{
@@ -75,10 +75,10 @@ p{
 }
 
 .experience{
-    border-bottom: 3px solid #ccc;
+    border-bottom: 0.188rem solid #ccc;
 }
 
 #About{
-    padding:80px;
+    padding: 5rem;
 }
 
