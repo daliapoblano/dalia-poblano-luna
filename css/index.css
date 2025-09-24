@@ -1,84 +1,176 @@
-body{
+/* ========= DESKTOP ========= */
+ body{
     background-color: #0F172A;
     color: #F1F5F9;
     font-family:"Nunito", sans-serif;
-}
+ }
 
 
-header{
+ header{
     position:sticky;
     top:0;
     padding:0.938rem;
     background-color:#F1F5F9;
-}
+ }
 
-header nav ul{
+ header nav ul{
     display:flex;
     justify-content: center;
     gap: 6.25rem;
     list-style-type: none;
-}
+ }
 
-a{
+ a{
     color:#6366F1;
-}
+ }
 
-h1{
+ h1{
     text-align:center;
     font-size: 2.5rem;
-}
+ }
 
-#profile_pic{
-    max-width: 15.625rem;   
-    height: auto;       
-    border-radius: 0.625rem; 
-    margin-right: 9.375rem;
-    margin-left: 53.125rem;
-    margin-top: -5rem;
-}
-
-p{
+ p{
     color:#94A3B8;
     text-align: left;
     margin-right: 53.125rem;
     margin-left: 3.125rem;
+ }
+
+ #profile_pic{
+    width:150px;
+    margin-top:2rem;
+    border-radius: 50%;
+    border:2px solid #ddd;
 }
 
-#Connect ul{
+ #Connect ul{
     list-style: none;
     display: flex;
     justify-content: space-around;
-}
+ }
 
-#Connect li{
+ #Connect li{
     margin-bottom: 0.938rem;
-}
+ }
 
-#Connect i{
+ #Connect i{
     margin-right: 1.125rem;     
     font-size: 1.875rem;      
     color: #F1F5F9;           
 
-}
+ }
 
-#Experience{
+ #Experience{
     background-color: #fdfdf6;
     color:#0F172A;
     padding: 5rem;
     border: 0.625rem solid #6495ed;
-}
+ }
 
-.experience-header{
+ .experience-header{
     display:flex;
     justify-content:space-between;
     align-items:baseline;
-}
+ }
 
-.experience{
+ .experience{
     border-bottom: 0.188rem solid #ccc;
-}
+ }
 
-#About{
+ #About{
     padding: 5rem;
+    background-color: #fdfdf6;
+    color:#0F172A;
+    border: 0.625rem solid #6495ed;
+    margin-bottom: 5rem;
+ }
+
+/* ========= TABLET ========= */
+@media (min-width: 768px){
+    h1{
+        font-size : 2.5rem;
+        text-align : center;  
+    }
+    body{
+        margin:0;
+        padding:0;
+    }
+    header{
+        position:sticky;
+        width:100%;
+    }
+
+    .experience-description{
+        width:70% /* adjusting width so that my decription doesn't stack into a narrow column on tablet device */
+    }
+    
+    .intro{
+        width:70%
+    }
+   
+    #profile_pic{
+        width:200px;
+        margin-top:2rem;
+        border-radius: 50%;
+        border:2px solid #0F172A;
+        margin-left: auto;
+        margin-right: auto;
+        display:block;
+    }
+
 }
 
+/* ========= MOBILE ========= */
+@media (min-width: 320px){
+    
+    h1{
+        font-size : 1.5rem;
+        text-align : center;
+        margin-left:auto;
+        margin-right:auto;  
+    }
+
+    body{
+        margin:0;
+        padding:0;
+    }
+
+    header{
+        position:sticky;
+        width:129%;
+    }
+
+    header nav ul{
+        display:flex;
+        justify-content: center;
+        gap: 2.15rem;
+        list-style-type: none;
+     }
+
+     .experience-description{
+        width:70% /* adjusting width so that my decription doesn't stack into a narrow column on tablet device */
+    }
+
+    .intro{
+        width:70%
+    }
+
+    #About{
+        padding: 2rem;
+        background-color: #fdfdf6;
+        color:#0F172A;
+        border: 0.625rem solid #6495ed;
+        margin-bottom: 5rem;
+        width:115%;
+     }
+
+     #Experience{
+        background-color: #fdfdf6;
+        color:#0F172A;
+        padding: 5rem;
+        border: 0.625rem solid #6495ed;
+        width:90%;
+        margin-bottom: 5rem;
+     }
+
+}
