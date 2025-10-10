@@ -6,6 +6,21 @@
  }
 
 
+ #Skills ul {
+    list-style:none;
+    padding: 0;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    justify-content:center;
+ }
+
+ #Skills li{
+    font-size: medium;
+    background-color:#6366F1;
+    padding: 0.5rem 1rem;
+    border-radius: 15%;
+ }
  header{
     position:sticky;
     top:0;
