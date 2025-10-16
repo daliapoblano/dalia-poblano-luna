@@ -1,26 +1,18 @@
 /* ========= DESKTOP ========= */
+
+/* body section */
+
  body{
     background-color: #0F172A;
     color: #F1F5F9;
     font-family:"Nunito", sans-serif;
+    margin:0;
+    padding:0;
+    overflow-x: hidden; /* prevents horizontal scroll */
  }
 
+ /* header section */ 
 
- #Skills ul {
-    list-style:none;
-    padding: 0;
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-    justify-content:center;
- }
-
- #Skills li{
-    font-size: medium;
-    background-color:#6366F1;
-    padding: 0.5rem 1rem;
-    border-radius: 15%;
- }
  header{
     position:sticky;
     top:0;
@@ -35,28 +27,58 @@
     list-style-type: none;
  }
 
- a{
-    color:#6366F1;
- }
-
  h1{
     text-align:center;
     font-size: 2.5rem;
  }
 
- p{
-    color:#94A3B8;
+ /* about section */
+
+ #About{
+    padding: 5rem;
+    background-color: #fdfdf6;
+    color:#0F172A;
+    border: 0.625rem solid #6495ed;
+    margin-bottom: 5rem;
+ }
+
+ .intro{
+    color: #94A3B8;
     text-align: left;
-    margin-right: 53.125rem;
-    margin-left: 3.125rem;
+    margin: 0;
+    line-height: 1.6;
+    font-size: 1rem;
  }
 
  #profile_pic{
-    width:150px;
+    width:11.25rem;
     margin-top:2rem;
     border-radius: 50%;
-    border:2px solid #ddd;
+    border:0.125rem solid #6366F1;
+    display: block;
+    margin: 0  auto;
 }
+
+/* experience section */
+
+#Experience{
+    background-color: #fdfdf6;
+    color:#0F172A;
+    padding: 5rem;
+    border: 0.625rem solid #6495ed;
+ }
+
+ .experience-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+ }
+
+ .experience{
+    border-bottom: 0.188rem solid #ccc;
+ }
+
+/* connect section */
 
  #Connect ul{
     list-style: none;
@@ -75,33 +97,31 @@
 
  }
 
- #Experience{
-    background-color: #fdfdf6;
-    color:#0F172A;
-    padding: 5rem;
-    border: 0.625rem solid #6495ed;
+ a{
+    color:#6366F1;
  }
 
- .experience-header{
+ /* skills section */
+ 
+ #Skills ul {
+    list-style:none;
+    padding: 0;
     display:flex;
-    justify-content:space-between;
-    align-items:baseline;
+    flex-wrap:wrap;
+    gap:0.625rem;
+    justify-content:center;
  }
 
- .experience{
-    border-bottom: 0.188rem solid #ccc;
+ #Skills li{
+    font-size: medium;
+    background-color:#6366F1;
+    padding: 0.5rem 1rem;
+    border-radius: 15%;
  }
-
- #About{
-    padding: 5rem;
-    background-color: #fdfdf6;
-    color:#0F172A;
-    border: 0.625rem solid #6495ed;
-    margin-bottom: 5rem;
- }
+ 
 
 /* ========= TABLET ========= */
-@media (min-width: 768px){
+@media (max-width: 1024px){
     h1{
         font-size : 2.5rem;
         text-align : center;  
@@ -136,7 +156,7 @@
 }
 
 /* ========= MOBILE ========= */
-@media (min-width: 320px){
+@media (max-width: 767px){
     
     h1{
         font-size : 1.5rem;
