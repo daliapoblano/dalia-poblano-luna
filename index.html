@@ -18,6 +18,7 @@
                    <li><a href="#Connect">Connect</a></li>
                    <li><a href="#Skills">Skills</a></li>
                    <li><a href="#Projects">Projects</a></li>
+                   <li><a href="#Form">Leave a Message</a></li>
                 </ul>
             </nav>
         </header>
@@ -87,6 +88,34 @@
                 </ul>
             </section>
         </main>
+
+      <!-- Creating a message form -->
+      <section id="Form">
+         <h2>Leave a Message</h2>
+         <form name="leave_messages">
+            <label for="usersName">Name:</label><br><br>
+            <input type = "text" id="usersName" name="userName" required><br><br>
+
+            <label name="usersEmail">Email:</label><br><br>
+            <input type = "text" id="usersEmail" name="usersEmail" required><br><br>
+
+            <label for="usersMessage">Message</label><br>
+            <textarea id="usersMessage" name="usersMessage" required></textarea><br><br>
+
+            <button type="submit">Submit</button>
+         </form>
+      </section>
+      <!-- Adding message list section  -->
+      <section id="Messages">
+        <h2>Messages</h2>
+        <ul>
+
+        </ul>
+
+
+      </section>
+
+      <!-- <footer> Copyright Dalia Poblano 2025 </footer> -->
       <script src="js/index.js"></script>
     </body>
 </html>

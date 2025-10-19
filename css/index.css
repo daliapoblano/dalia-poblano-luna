@@ -1,26 +1,18 @@
 /* ========= DESKTOP ========= */
+
+/* body section */
+
  body{
     background-color: #0F172A;
     color: #F1F5F9;
     font-family:"Nunito", sans-serif;
+    margin:0;
+    padding:0;
+    overflow-x: hidden; /* prevents horizontal scroll */
  }
 
+ /* header section */ 
 
- #Skills ul {
-    list-style:none;
-    padding: 0;
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-    justify-content:center;
- }
-
- #Skills li{
-    font-size: medium;
-    background-color:#6366F1;
-    padding: 0.5rem 1rem;
-    border-radius: 15%;
- }
  header{
     position:sticky;
     top:0;
@@ -35,47 +27,41 @@
     list-style-type: none;
  }
 
- a{
-    color:#6366F1;
- }
-
  h1{
     text-align:center;
     font-size: 2.5rem;
  }
 
- p{
-    color:#94A3B8;
+ /* about section */
+
+ #About{
+    padding: 5rem;
+    background-color: #fdfdf6;
+    color:#0F172A;
+    border: 0.625rem solid #6495ed;
+    margin-bottom: 5rem;
+ }
+
+ .intro{
+    color: #94A3B8;
     text-align: left;
-    margin-right: 53.125rem;
-    margin-left: 3.125rem;
+    margin: 0;
+    line-height: 1.6;
+    font-size: 1rem;
  }
 
  #profile_pic{
-    width:150px;
+    width:11.25rem;
     margin-top:2rem;
     border-radius: 50%;
-    border:2px solid #ddd;
+    border:0.125rem solid #6366F1;
+    display: block;
+    margin: 0  auto;
 }
 
- #Connect ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
- }
+/* experience section */
 
- #Connect li{
-    margin-bottom: 0.938rem;
- }
-
- #Connect i{
-    margin-right: 1.125rem;     
-    font-size: 1.875rem;      
-    color: #F1F5F9;           
-
- }
-
- #Experience{
+#Experience{
     background-color: #fdfdf6;
     color:#0F172A;
     padding: 5rem;
@@ -92,16 +78,92 @@
     border-bottom: 0.188rem solid #ccc;
  }
 
- #About{
+ .experience-description{
+    color:#94A3B8;
+ }
+/* connect section */
+
+#Connect{
     padding: 5rem;
-    background-color: #fdfdf6;
-    color:#0F172A;
     border: 0.625rem solid #6495ed;
-    margin-bottom: 5rem;
+    background-color: #fdfdf6;
+    padding: 5rem;
+    color:#0F172A;
+    margin-top: 4rem; 
+}
+
+ #Connect ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
  }
 
+ #Connect li{
+    margin-bottom: 0.938rem;
+ }
+
+ #Connect i{
+    margin-right: 1.125rem;     
+    font-size: 1.875rem;      
+    color: #3e2f5b;           
+ }
+
+ a{
+    color:#6366F1;
+ }
+
+ /* skills section */
+
+ #Skills{
+    padding: 5rem;
+    border: 0.625rem solid #6495ed;
+    background-color: #fdfdf6;
+    padding: 5rem;
+    color:#0F172A;
+    margin-top: 4rem; 
+ }
+
+ #Skills ul {
+    list-style:none;
+    padding: 0;
+    display:flex;
+    flex-wrap:wrap;
+    gap:0.625rem;
+    justify-content:center;
+ }
+
+ #Skills li{
+    font-size: medium;
+    background-color:#6366F1;
+    padding: 0.5rem 1rem;
+    border-radius: 15%;
+ }
+ 
+ /* projects section */
+
+ #Projects{
+    padding: 5rem;
+    border: 0.625rem solid #6495ed;
+    background-color: #fdfdf6;
+    padding: 5rem;
+    color:#0F172A;
+    margin-top: 4rem; 
+ }
+
+ /* form section */
+
+ #Form{
+    padding: 5rem;
+    border: 0.625rem solid #6495ed;
+    background-color: #eae6fa;
+    padding: 5rem;
+    color:#0F172A;
+    margin-top: 4rem;
+ }
+
+
 /* ========= TABLET ========= */
-@media (min-width: 768px){
+@media (max-width: 1024px){
     h1{
         font-size : 2.5rem;
         text-align : center;  
@@ -116,11 +178,11 @@
     }
 
     .experience-description{
-        width:70% /* adjusting width so that my decription doesn't stack into a narrow column on tablet device */
+        width:70%; /* adjusting width so that my decription doesn't stack into a narrow column on tablet device */
     }
     
     .intro{
-        width:70%
+        width:70%;
     }
    
     #profile_pic{
@@ -136,7 +198,7 @@
 }
 
 /* ========= MOBILE ========= */
-@media (min-width: 320px){
+@media (max-width: 767px){
     
     h1{
         font-size : 1.5rem;
@@ -163,11 +225,11 @@
      }
 
      .experience-description{
-        width:70% /* adjusting width so that my decription doesn't stack into a narrow column on tablet device */
+        width:70%; /* adjusting width so that my decription doesn't stack into a narrow column on tablet device */
     }
 
     .intro{
-        width:70%
+        width:70%;
     }
 
     #About{
