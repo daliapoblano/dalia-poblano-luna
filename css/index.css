@@ -114,6 +114,15 @@
 
  /* skills section */
 
+ #Skills{
+    padding: 5rem;
+    border: 0.625rem solid #6495ed;
+    background-color: #fdfdf6;
+    padding: 5rem;
+    color:#0F172A;
+    margin-top: 4rem; 
+ }
+
  #Skills ul {
     list-style:none;
     padding: 0;
@@ -130,6 +139,27 @@
     border-radius: 15%;
  }
  
+ /* projects section */
+
+ #Projects{
+    padding: 5rem;
+    border: 0.625rem solid #6495ed;
+    background-color: #fdfdf6;
+    padding: 5rem;
+    color:#0F172A;
+    margin-top: 4rem; 
+ }
+
+ /* form section */
+
+ #Form{
+    padding: 5rem;
+    border: 0.625rem solid #6495ed;
+    background-color: #eae6fa;
+    padding: 5rem;
+    color:#0F172A;
+    margin-top: 4rem;
+ }
 
 /* ========= TABLET ========= */
 @media (max-width: 1024px){
