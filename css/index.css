@@ -161,6 +161,7 @@
     margin-top: 4rem;
  }
 
+
 /* ========= TABLET ========= */
 @media (max-width: 1024px){
     h1{
@@ -177,11 +178,11 @@
     }
 
     .experience-description{
-        width:70% /* adjusting width so that my decription doesn't stack into a narrow column on tablet device */
+        width:70%; /* adjusting width so that my decription doesn't stack into a narrow column on tablet device */
     }
     
     .intro{
-        width:70%
+        width:70%;
     }
    
     #profile_pic{
@@ -224,11 +225,11 @@
      }
 
      .experience-description{
-        width:70% /* adjusting width so that my decription doesn't stack into a narrow column on tablet device */
+        width:70%; /* adjusting width so that my decription doesn't stack into a narrow column on tablet device */
     }
 
     .intro{
-        width:70%
+        width:70%;
     }
 
     #About{
