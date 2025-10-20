@@ -150,6 +150,28 @@
     margin-top: 4rem; 
  }
 
+ #Projects ul{
+    list-style:none;
+    padding: 0;
+    display:flex;
+    flex-wrap:wrap;
+    gap:0.625rem;
+    justify-content:center;
+ }
+
+ #Projects li{
+    font-size: medium;
+    background-color:#6366F1;
+    padding: 0.5rem 1rem;
+    border-radius: 15%;
+ }
+
+ #Projects li a {
+    color: #0F172A;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
  /* form section */
 
  #Form{
