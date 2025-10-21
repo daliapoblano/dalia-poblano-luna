@@ -108,7 +108,7 @@ messageForm.addEventListener("submit", function(event){
 
         //Update the message 
         if (newText !== null) {
-            messageSapn.innerText = newText;
+            messageSpan.innerText = newText;
         }
     });
 
